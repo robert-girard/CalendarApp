@@ -9,7 +9,7 @@ CalendarApp was developed as part of the University of Toronto course:  "Softwar
 - Xiaoning Wang
 - Zach Folan
 
-The intent of the project was to design a Java application to specifications ([Phase 1](Specifications Phase 1.txt), [Phase 2](Specifications Phase 2.txt)) while demonstrating good software design practices such as: implementation of relevant design patterns, managing modularity/dependancy/coupling and using clean Architecture layering. 
+The intent of the project was to design a Java application to specifications ([Phase 1]("Specifications Phase 1.txt"), [Phase 2](Specifications Phase 2.txt)) while demonstrating good software design practices such as: implementation of relevant design patterns, managing modularity/dependancy/coupling and using clean Architecture layering. 
 
 The specifications included a list of optional and required features with a a minimum number of optional features that must be implemented ([Full Project Feature List](CalendarApp/Feature List.md)). In a nutshell, the application is a console calendar application which allows for schedualing events, alerts, memos, and series' as well as the sharing of that content and messaging other calendar users. 
 
