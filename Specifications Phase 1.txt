@@ -1,0 +1,53 @@
+Overview
+
+You will produce a calendar program that stores events, alerts and memos associated with those events, allows you to search for events by tag, and more. For Phase 1, the user will interact with your program through typing into the keyboard and selecting items from menu(s) that will be displayed on the screen. You can add a GUI as part of your Phase 2 submission, if you choose to do so from the list of possible Phase 2 additions.
+
+Everyone in your group is expected to contribute to the initial design discussions and coding. Proper use of git through your group repository is mandatory. Do not use github or other repositories or you will not get credit for your work.
+
+Specification
+
+Your program will handle the following:
+
+1. Users
+
+Your program should be able to handle a single user who logs into the system to create and view events (past, current/on-going, future), alerts, and memos. Anything they create should persist after the program is shut down and be available when you restart the program. For Phase 1, you only have to handle a single user. But Phase 2 will require multiple user handling, so design with that extension in mind.
+
+2. Events
+
+Your program will handle all three types of events from Assignment 2. Copied from the Assignment 2 handout:
+
+"Your program will handle events that have a start time and day, end time and day, and a series of alerts leading up to it that the user can set themselves. The user can either set individual alerts (example: one for Wednesday, one for Friday, and one for the following Tuesday) or the user can set alerts for a certain frequency (example: every hour from now until the event or every day from now until the event). For example, the user may create such an event to represent an exam that they will write with alerts to remind them of each study session. Likewise this type of event could represent a sports game with an alert to remind the user to pick up tickets."
+
+"Your program will handle events that form a series. There are two ways that the user can create the series. The first method is to set the duration, frequencey (example: daily, every Monday, etc.), and number of events. Alternatively, the user can create each event separately and then choose the option to link them together under a given name. For example, this type of event could represent lectures for a course or the user's gym workouts. The user should be able to find events by date, by name, or by series name."
+
+"Your program will handle events that can be tagged, searched, and associated with memos. Your memo system will allow you to write a note that is associated with an event (example: the address of a party can be stored along with the time/date of the party event) or a memo that has multiple events associated with it (example: a list of books that you plan to read could be associated with all of your book club meeting-events). The user should be able to find events by their tag, by date, or by browsing a list of memos and selecting one that is associated with the event. By selecting an event, the user should also be able to see any memos associated with it."
+
+NOTE: This specification tells you how the program looks from the user's perspective. You do not have to store memos inside memos. You can associate a memo with another memo in any reasonable way.
+
+Unlike in Assignment 2, for Phase 1, all three types of events will not be distinct. Every event should be able to be tagged, searched for by tag, associated with at most one memo, have alert(s), and be part of a series.
+
+3. Text UI
+
+The user will see menu options that are printed to the screen and select one of them by typing on the keyboard. If you need any further information from the user, you can print questions to the screen. Consider the SOLID principles -- the Single Responsibility Principle, in particular -- when designing the class(es) that will be responsible for this.
+
+In Phase 2, there will be a number of options from which to choose. One of those will be to create a GUI (Graphical User Interface). If you decide to make that GUI into an Android app, that will count for two of those options.
+
+4. External Files and README.txt
+
+If you are storing information to a file that is outside of your program, such as a .txt or a .csv file, make sure that it is located somewhere inside your phase1 folder. MarkUs will not let you push files that are outside of the phase1 folder. When specifying the file path to a file called FileName.txt, try calling it "FileName.txt" or "packageName/FileName.txt" and NOT "C://folder1/folder2/FileName.txt". Other people in your group may not have the same folders on their computers. So long file paths may prevent your code from running on other people's computers.
+
+You should also include a README.txt file with instructions for us, so that we can successfully fun your code and assign an accurate mark. Your instructions should include whatever information we need to know about setting up your program such as the username and password, how to make any modifications to your configurations files (if there are any), and anything you think we should know, when marking.
+
+What you will hand in
+
+You program must compile and run, or we won't be able to give it an accurate mark. Please keep in mind that your Phase 2 mark will replace your Phase 1 mark, if it is higher. So the focus is on creating a program that runs, has the specified functionality, and is designed so that it will be easy to extend for Phase 2. You will be marked and receive feedback on encapsulation, the SOLID principles, and the overall ease of maintaining and extending your code. All non-private classes, methods, and variables should have Javadoc. Furthermore, style should be uniform throughout your program. This means that class names, package names, and file organization should be discussed by the group before pushing the complete version of your code to MarkUs.
+
+Getting Started
+
+Step 0: Read The Missing Chapter (pages 303–321) in the course textbook. Read it carefully and actively discuss your code organization with your group as you work on the project. Disciplined package use will one of the project marking criteria. Be kind to each other while you're working together, especially when you're brainstorming.
+
+Step 1: One person in your group should log into MarkUs, click on the Phase 1 repository (available starting noon on Friday Feb 14) and clone it using IntelliJ.
+
+That same person should then go to "File" --> "Close Project". Then, from the IntelliJ starting screen, select "Create New Project". The project should be a Java project that is not "Kotlin" nor "Groovy". Give your project a name and locate it inside the phase1 folder. Do not call your project "phase1".
+
+Step 2: Then, once the project has been created inside your repository, it should be added, committed, and pushed so that everyone else will see the project when they clone the group's repository from MarkUs.
